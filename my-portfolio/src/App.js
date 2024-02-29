@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// AppContainer.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navigation from './Navigation';
+import App1Component1 from './apps/calculator/App1Component1';
+import App2Component1 from './apps/quote-generator/App2Component1';
+import Home from './Home';
 
-function App() {
+const AppContainer = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/calculator" element={<App1Component1/>} />
+          <Route path="/quote-generator" element={<App2Component1 />} />
+          {/* Add routes for other components */}
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
-export default App;
+export default AppContainer;
