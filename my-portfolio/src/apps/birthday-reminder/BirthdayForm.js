@@ -2,40 +2,51 @@ import React, { useState } from 'react';
 
 const BirthdayForm = ({ onAddBirthday }) => {
   const [name, setName] = useState('');
-  const [date, setDate] = useState('');
+  const [month, setMonth] = useState('');
+  const [day, setDay] = useState('');
 
-  const handleAddBirthday = () => {
-    // Validate input (you can add more validation logic as needed)
-    if (!name || !date) {
-      alert('Please enter both name and date.');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Check if name, month, and day are not empty
+    if (name.trim() === '' || month.trim() === '' || day.trim() === '') {
+      alert('Please enter both name, month, and day');
       return;
     }
 
-    // Format the date as needed
-    // For simplicity, let's assume date is in MM/DD format
-    const formattedDate = date;
-
-    // Clear input fields
-    setName('');
-    setDate('');
+    // Create a new birthday object
+    const newBirthday = {
+      id: Math.random().toString(), // You should use a better ID generation method
+      name,
+      month,
+      day,
+    };
 
     // Pass the new birthday to the parent component
-    onAddBirthday({ name, date: formattedDate });
+    onAddBirthday(newBirthday);
+
+    // Clear the form
+    setName('');
+    setMonth('');
+    setDay('');
   };
 
   return (
-    <div>
-      <h3>Add New Birthday</h3>
-      <div>
-        <label>Name:</label>
+    <form onSubmit={handleSubmit}>
+      <label>
+        Name:
         <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-      </div>
-      <div>
-        <label>Date (MM/DD):</label>
-        <input type="text" value={date} onChange={(e) => setDate(e.target.value)} />
-      </div>
-      <button onClick={handleAddBirthday}>Add Birthday</button>
-    </div>
+      </label>
+      <label>
+        Month:
+        <input type="text" value={month} onChange={(e) => setMonth(e.target.value)} />
+      </label>
+      <label>
+        Day:
+        <input type="text" value={day} onChange={(e) => setDay(e.target.value)} />
+      </label>
+      <button type="submit">Add Birthday</button>
+    </form>
   );
 };
 
