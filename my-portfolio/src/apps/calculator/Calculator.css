@@ -1,0 +1,92 @@
+.calculator {
+    border-left: 12px solid grey;
+    border-right: 12px solid blue;
+    border-top: 12px solid grey;
+    border-bottom: 12px solid blue;
+    border-radius:23px  0 23px 0; 
+    padding: 5px;
+    background: black;
+    width: 320px;
+    position: relative;
+
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .formulaScreen {
+    min-height: 20px;
+    font-family: digital;
+    font-size: 20px;
+    color: orange;
+    text-align: right;
+    vertical-align: text-top;
+    line-height: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  
+  .outputScreen {
+    font-size: 29px;
+    font-family: digital;
+    color: white;
+    text-align: right;
+    line-height: 35px;
+  }
+  
+  button {
+    position: relative;
+    height: 65px;
+    width: 80px;
+    color: white;
+    outline: 1px solid #149231;
+    border: none;
+    background: #4d4d4d;
+    font-family: Share Tech Mono, monospace;
+    font-size: 20px;
+    cursor: default;
+  }
+  
+  button:hover {
+    color: #e5c90f;
+    outline: 0.05em solid grey;
+    z-index: 3;
+  }
+  
+  .jumbo {
+    width: 160px;
+  }
+  
+  #clear {
+    background: #ac3939;
+  }
+  
+  #divide,
+  #multiply,
+  #subtract,
+  #add,
+  #equals {
+    background: #666666;
+  }
+  
+  #equals {
+    background: #004466;
+    position: absolute;
+    height: 130px;
+    bottom: 5px;
+  }
+  
+  .author {
+    text-align: center;
+    font-family: Share Tech Mono, sans;
+    margin-top: 15px;
+  }
+  
+  .author a {
+    text-decoration: none;
+    color: #00264d;
+    line-height: 26px;
+  }
+  

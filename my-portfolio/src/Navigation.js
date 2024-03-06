@@ -5,24 +5,42 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Link } from '@mui/material';
 
+import CalculatorIcon from './apps/calculator/ CalculatorIcon';
+import QuoteGeneratorIcon from './apps/quote-generator/QuoteGeneratorIcon';
+import BirthdayIcon from './apps/birthday-reminder/BirthdayIcon';
+
+
 const Navigation = () => {
   return (
-    <AppBar position="static" style={{ backgroundColor: '#000000' }}>
-      <Toolbar style={{ justifyContent: 'space-between' }}>
+    
+    <AppBar position="static" style={{ backgroundColor: 'black', justifyContent:'space-between' }}>
+
+      <Toolbar style={{  justifyContent:'space-between', backgroundColor: 'darkgreen'  }}>
+
         <Link href="/" color="inherit" style={{ textDecoration: 'none' }}>
-          <Typography variant="h6">My Portfolio</Typography>
+
+          <Typography variant="h6" >My Portfolio</Typography>
+
         </Link>
-        <div>
-          <Link href="/calculator" color="inherit" style={{ marginRight: '20px' }}>
-            <Typography variant="h6">Calculator</Typography>
-          </Link>
-          <Link href="/quote-generator" color="inherit" style={{ marginRight: '20px' }}>
-            <Typography variant="h6">Quote Generator</Typography>
-          </Link>
-        </div>
-      </Toolbar>
+         
+        {/* Calculator Icon */}
+        <Link href="/calculator" style={{ marginRight: '10px' }}>
+          <CalculatorIcon style={{ fill: 'white', height: '24px' }} />
+        </Link>
+
+        {/* Quote Generator Icon */}
+        <Link href="quote-generator">
+          <QuoteGeneratorIcon style={{ fill: 'white', height: '24px' }} />
+        </Link>
+             {/* Quote Generator Icon */}
+             <Link href="birthday-reminder">
+          <BirthdayIcon style={{ fill: 'white', height: '24px' }} />
+        </Link>
+              </Toolbar>
+
     </AppBar>
   );
 };
 
 export default Navigation;
+ 

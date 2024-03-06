@@ -5,6 +5,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import { Link } from 'react-router-dom';
+import Section from './Section';
 
 const Home = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -20,7 +21,7 @@ const Home = () => {
     <div style={{ display: 'flex' }}>
       {/* Sidebar */}
       <Drawer anchor="left" open={openDrawer} onClose={toggleDrawer(false)}>
-        <List>
+        <List style={{ backgroundColor: 'darkgreen', color: 'whitesmoke' }}>
           {/* Link to Calculator */}
           <ListItem button component={Link} to="/calculator">
             <ListItemText primary="Calculator" />
@@ -34,35 +35,30 @@ const Home = () => {
       </Drawer>
 
       {/* Main Content */}
-      <div style={{ marginLeft: openDrawer ? 240 : 0, padding: '20px', textAlign: 'center' }}>
+      <div style={{ marginLeft: openDrawer ? 340 : 0, padding: '20px', textAlign: 'center' }}>
         <h2>Welcome to My Portfolio</h2>
-        <p>This is the home page of my portfolio. Explore the applications using the navigation above.</p>
+        <p>This is the home page of my portfolio. Explore the applications using the navigation of your choice.</p>
 
         {/* Toggle Sidebar Button */}
-        <button onClick={toggleDrawer(!openDrawer)}>
-          {openDrawer ? 'Close Sidebar' : 'Open Sidebar'}
+        <button
+          onClick={toggleDrawer(!openDrawer)}
+          style={{
+            background: '#000000',
+            color: 'white',
+            margin: '10px',
+            padding: '20px',
+            fontSize: '14px',
+            width: '200px',
+          }}
+        >
+          {openDrawer ? 'done viewing !!' : 'check out my apps'}
         </button>
 
-        {/* Four Divs */}
-        <div style={{ background: 'lightblue', margin: '10px', padding: '20px' }}>
-          <h3>Div 1</h3>
-          <p>Content for Div 1</p>
-        </div>
-
-        <div style={{ background: 'lightgreen', margin: '10px', padding: '20px' }}>
-          <h3>Div 2</h3>
-          <p>Content for Div 2</p>
-        </div>
-
-        <div style={{ background: 'lightcoral', margin: '10px', padding: '20px' }}>
-          <h3>Div 3</h3>
-          <p>Content for Div 3</p>
-        </div>
-
-        <div style={{ background: 'lightgoldenrodyellow', margin: '10px', padding: '20px' }}>
-          <h3>Div 4</h3>
-          <p>Content for Div 4</p>
-        </div>
+        {/* Sections */}
+        <Section title="Div 1" content="Content for Div 1" />
+        <Section title="Div 2" content="Content for Div 2" />
+        <Section title="Div 3" content="Content for Div 3" />
+        <Section title="Div 4" content="Content for Div 4" />
       </div>
     </div>
   );

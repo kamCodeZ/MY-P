@@ -2,9 +2,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './Navigation';
-import App1Component1 from './apps/calculator/App1Component1';
-import App2Component1 from './apps/quote-generator/App2Component1';
+import Calculator from './apps/calculator/Calculator';
+import QuoteBox from './apps/quote-generator/QuoteBox';
+import BirthdayReminder from './apps/birthday-reminder/BirthdayReminder';
+
 import Home from './Home';
+
+
 
 const AppContainer = () => {
   return (
@@ -13,8 +17,9 @@ const AppContainer = () => {
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/calculator" element={<App1Component1/>} />
-          <Route path="/quote-generator" element={<App2Component1 />} />
+          <Route path="/calculator" element={<Calculator/>} />
+          <Route path="/quote-generator" element={<QuoteBox/>} />
+          <Route path="/birthday-reminder" element={<BirthdayReminder/>} />
           {/* Add routes for other components */}
         </Routes>
       </div>
