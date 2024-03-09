@@ -5,7 +5,7 @@ import Navigation from './Navigation';
 import Calculator from './apps/calculator/Calculator';
 import QuoteBox from './apps/quote-generator/QuoteBox';
 import BirthdayReminder from './apps/birthday-reminder/BirthdayReminder';
-
+import Lapp from './apps/B/Lapp';
 import Home from './Home';
 
 
@@ -20,6 +20,7 @@ const AppContainer = () => {
           <Route path="/calculator" element={<Calculator/>} />
           <Route path="/quote-generator" element={<QuoteBox/>} />
           <Route path="/birthday-reminder" element={<BirthdayReminder/>} />
+          <Route path='/B' element={ <Lapp/>} />
           {/* Add routes for other components */}
         </Routes>
       </div>

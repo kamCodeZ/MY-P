@@ -1,6 +1,6 @@
 /* src/components/quote-generator/QuoteBox.css */
 #quote-box {
-    border-radius:0 153px;
+  
     position: relative;
     width: 450px;
     padding: 40px 50px;
@@ -11,12 +11,13 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-  }
+      /* width: 600px; */
+}
   
   #quote-box .quote-text {
     text-align: center;
     width: 450px;
-    height: auto;
+    /* height: auto; */
     clear: both;
     font-weight: 500;
     font-size: 1.75em;
@@ -29,7 +30,7 @@
   
   #quote-box .quote-author {
     width: 450px;
-    height: auto;
+    /* height: auto; */
     clear: both;
     padding-top: 20px;
     font-size: 1em;
@@ -43,7 +44,7 @@
   }
   
   #quote-box .buttons .button {
-    height: 38px;
+    /* height: 38px; */
     border: none;
     border-radius: 3px;
     color: #fff;
@@ -67,7 +68,7 @@
     text-align: center;
     font-size: 1.2em;
     margin-right: 5px;
-    height: 30px;
+    /* height: 30px; */
     width: 40px;
   }
   

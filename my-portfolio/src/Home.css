@@ -1,0 +1,36 @@
+.app-container {
+  overflow: hidden;
+}
+
+.scrolling-container {
+  display: flex;
+  animation: scrollAnimation 20s linear infinite; /* Adjust the duration as needed */
+}
+
+.scrolling-div {
+  width: 600px;
+  height: 600px;
+  background: rgb(
+    ${Math.random() * 255},
+    ${Math.random() * 255},
+    ${Math.random() * 255}
+  );
+  margin: 10px;
+}
+
+.div-content {
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  color: white;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust based on the number of divs and their width */
+  }
+}
+ 

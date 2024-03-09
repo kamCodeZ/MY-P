@@ -15,7 +15,7 @@ const Navigation = () => {
     
     <AppBar position="static" style={{ backgroundColor: 'black', justifyContent:'space-between' }}>
 
-      <Toolbar style={{  justifyContent:'space-between', backgroundColor: 'darkgreen'  }}>
+      <Toolbar style={{  justifyContent:'space-between', backgroundColor: 'grey', color:'white'  }}>
 
         <Link href="/" color="inherit" style={{ textDecoration: 'none' }}>
 
@@ -32,10 +32,15 @@ const Navigation = () => {
         <Link href="quote-generator">
           <QuoteGeneratorIcon style={{ fill: 'white', height: '24px' }} />
         </Link>
-             {/* Quote Generator Icon */}
+             {/* BIRTHDAY REMINDER Icon */}
              <Link href="birthday-reminder">
           <BirthdayIcon style={{ fill: 'white', height: '24px' }} />
         </Link>
+                {/* BIRTHDAY REMINDER Icon */}
+                <Link href="B">
+          <BirthdayIcon style={{ fill: 'white', height: '24px' }} />
+        </Link>
+              
               </Toolbar>
 
     </AppBar>
