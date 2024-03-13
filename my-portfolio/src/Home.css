@@ -1,21 +1,28 @@
-.app-container {
-  overflow: hidden;
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  } 
 }
+
 
 .scrolling-container {
   display: flex;
-  animation: scrollAnimation 20s linear infinite; /* Adjust the duration as needed */
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  background-color: black;
+  width: 100%; /* Adjust the width as needed */
+  height: 95vh; /* Adjust the height as needed */
+  margin-right: 10px;
 }
 
 .scrolling-div {
-  width: 600px;
-  height: 600px;
-  background: rgb(
-    ${Math.random() * 255},
-    ${Math.random() * 255},
-    ${Math.random() * 255}
-  );
-  margin: 10px;
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+  display: inline-block;
 }
 
 .div-content {
@@ -24,13 +31,3 @@
   padding: 20px;
   color: white;
 }
-
-@keyframes scrollAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%); /* Adjust based on the number of divs and their width */
-  }
-}
- 

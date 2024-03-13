@@ -1,522 +1,62 @@
 [
-    {
-      "id": 1,
-      "name": "DAVID PAUL",
-      "birthday": "2024-03-07",
-      "picture": "https://placekitten.com/64/64"
-    },
-    {
-      "id": 2,
-      "name": "Jane Smith",
-      "birthday": "2024-03-20",
-      "picture": "https://placekitten.com/64/65"
-    },
-    {
-      "id": 3,
-      "name": "Alice Johnson",
-      "birthday": "2024-04-05",
-      "picture": "https://placekitten.com/64/66"
-    },
-    {
-      "id": 4,
-      "name": "Bob Brown",
-      "birthday": "2024-04-10",
-      "picture": "https://placekitten.com/64/67"
-    },
-    {
-      "id": 5,
-      "name": "Eva Davis",
-      "birthday": "2024-05-12",
-      "picture": "https://placekitten.com/64/68"
-    },
-    {
-      "id": 6,
-      "name": "Mike Wilson",
-      "birthday": "2024-05-25",
-      "picture": "https://placekitten.com/64/69"
-    },
-    {
-      "id": 7,
-      "name": "Sophie Miller",
-      "birthday": "2024-03-07",
-      "picture": "https://placekitten.com/64/70"
-    },
-    {
-      "id": 8,
-      "name": "David Taylor",
-      "birthday": "2024-06-18",
-      "picture": "https://placekitten.com/64/71"
-    },
-    {
-        "id": 1,
-        "name": "John Doe",
-        "birthday": "2024-03-15",
-        "picture": "https://placekitten.com/64/64"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "birthday": "2024-03-20",
-        "picture": "https://placekitten.com/64/65"
-      },
-      {
-        "id": 3,
-        "name": "Alice Johnson",
-        "birthday": "2024-04-05",
-        "picture": "https://placekitten.com/64/66"
-      },
-      {
-        "id": 4,
-        "name": "Bob Brown",
-        "birthday": "2024-04-10",
-        "picture": "https://placekitten.com/64/67"
-      },
-      {
-        "id": 5,
-        "name": "Eva Davis",
-        "birthday": "2024-05-12",
-        "picture": "https://placekitten.com/64/68"
-      },
-      {
-        "id": 6,
-        "name": "Mike Wilson",
-        "birthday": "2024-05-25",
-        "picture": "https://placekitten.com/64/69"
-      },
-      {
-        "id": 7,
-        "name": "Sophie Miller",
-        "birthday": "2024-06-03",
-        "picture": "https://placekitten.com/64/70"
-      },
-      {
-        "id": 8,
-        "name": "David Taylor",
-        "birthday": "2024-06-18",
-        "picture": "https://placekitten.com/64/71"
-      },  {
-        "id": 1,
-        "name": "John Doe",
-        "birthday": "2024-03-15",
-        "picture": "https://placekitten.com/64/64"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "birthday": "2024-03-20",
-        "picture": "https://placekitten.com/64/65"
-      },
-      {
-        "id": 3,
-        "name": "Alice Johnson",
-        "birthday": "2024-04-05",
-        "picture": "https://placekitten.com/64/66"
-      },
-      {
-        "id": 4,
-        "name": "Bob Brown",
-        "birthday": "2024-04-10",
-        "picture": "https://placekitten.com/64/67"
-      },
-      {
-        "id": 5,
-        "name": "Eva Davis",
-        "birthday": "2024-05-12",
-        "picture": "https://placekitten.com/64/68"
-      },
-      {
-        "id": 6,
-        "name": "Mike Wilson",
-        "birthday": "2024-05-25",
-        "picture": "https://placekitten.com/64/69"
-      },
-      {
-        "id": 7,
-        "name": "Sophie Miller",
-        "birthday": "2024-06-03",
-        "picture": "https://placekitten.com/64/70"
-      },
-      {
-        "id": 8,
-        "name": "David Taylor",
-        "birthday": "2024-06-18",
-        "picture": "https://placekitten.com/64/71"
-      },  {
-        "id": 1,
-        "name": "John Doe",
-        "birthday": "2024-03-15",
-        "picture": "https://placekitten.com/64/64"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "birthday": "2024-03-20",
-        "picture": "https://placekitten.com/64/65"
-      },
-      {
-        "id": 3,
-        "name": "Alice Johnson",
-        "birthday": "2024-04-05",
-        "picture": "https://placekitten.com/64/66"
-      },
-      {
-        "id": 4,
-        "name": "Bob Brown",
-        "birthday": "2024-04-10",
-        "picture": "https://placekitten.com/64/67"
-      },
-      {
-        "id": 5,
-        "name": "Eva Davis",
-        "birthday": "2024-05-12",
-        "picture": "https://placekitten.com/64/68"
-      },
-      {
-        "id": 6,
-        "name": "Mike Wilson",
-        "birthday": "2024-05-25",
-        "picture": "https://placekitten.com/64/69"
-      },
-      {
-        "id": 7,
-        "name": "Sophie Miller",
-        "birthday": "2024-06-03",
-        "picture": "https://placekitten.com/64/70"
-      },
-      {
-        "id": 8,
-        "name": "David Taylor",
-        "birthday": "2024-06-18",
-        "picture": "https://placekitten.com/64/71"
-      } , {
-        "id": 1,
-        "name": "John Doe",
-        "birthday": "2024-03-15",
-        "picture": "https://placekitten.com/64/64"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "birthday": "2024-03-20",
-        "picture": "https://placekitten.com/64/65"
-      },
-      {
-        "id": 3,
-        "name": "Alice Johnson",
-        "birthday": "2024-04-05",
-        "picture": "https://placekitten.com/64/66"
-      },
-      {
-        "id": 4,
-        "name": "Bob Brown",
-        "birthday": "2024-04-10",
-        "picture": "https://placekitten.com/64/67"
-      },
-      {
-        "id": 5,
-        "name": "Eva Davis",
-        "birthday": "2024-05-12",
-        "picture": "https://placekitten.com/64/68"
-      },
-      {
-        "id": 6,
-        "name": "Mike Wilson",
-        "birthday": "2024-05-25",
-        "picture": "https://placekitten.com/64/69"
-      },
-      {
-        "id": 7,
-        "name": "Sophie Miller",
-        "birthday": "2024-06-03",
-        "picture": "https://placekitten.com/64/70"
-      },
-      {
-        "id": 8,
-        "name": "David Taylor",
-        "birthday": "2024-06-18",
-        "picture": "https://placekitten.com/64/71"
-      },  {
-        "id": 1,
-        "name": "John Doe",
-        "birthday": "2024-03-15",
-        "picture": "https://placekitten.com/64/64"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "birthday": "2024-03-20",
-        "picture": "https://placekitten.com/64/65"
-      },
-      {
-        "id": 3,
-        "name": "Alice Johnson",
-        "birthday": "2024-04-05",
-        "picture": "https://placekitten.com/64/66"
-      },
-      {
-        "id": 4,
-        "name": "Bob Brown",
-        "birthday": "2024-04-10",
-        "picture": "https://placekitten.com/64/67"
-      },
-      {
-        "id": 5,
-        "name": "Eva Davis",
-        "birthday": "2024-05-12",
-        "picture": "https://placekitten.com/64/68"
-      },
-      {
-        "id": 6,
-        "name": "Mike Wilson",
-        "birthday": "2024-05-25",
-        "picture": "https://placekitten.com/64/69"
-      },
-      {
-        "id": 7,
-        "name": "Sophie Miller",
-        "birthday": "2024-06-03",
-        "picture": "https://placekitten.com/64/70"
-      },
-      {
-        "id": 8,
-        "name": "David Taylor",
-        "birthday": "2024-06-18",
-        "picture": "https://placekitten.com/64/71"
-      } , {
-        "id": 1,
-        "name": "John Doe",
-        "birthday": "2024-03-15",
-        "picture": "https://placekitten.com/64/64"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "birthday": "2024-03-20",
-        "picture": "https://placekitten.com/64/65"
-      },
-      {
-        "id": 3,
-        "name": "Alice Johnson",
-        "birthday": "2024-04-05",
-        "picture": "https://placekitten.com/64/66"
-      },
-      {
-        "id": 4,
-        "name": "Bob Brown",
-        "birthday": "2024-04-10",
-        "picture": "https://placekitten.com/64/67"
-      },
-      {
-        "id": 5,
-        "name": "Eva Davis",
-        "birthday": "2024-05-12",
-        "picture": "https://placekitten.com/64/68"
-      },
-      {
-        "id": 6,
-        "name": "Mike Wilson",
-        "birthday": "2024-05-25",
-        "picture": "https://placekitten.com/64/69"
-      },
-      {
-        "id": 7,
-        "name": "Sophie Miller",
-        "birthday": "2024-06-03",
-        "picture": "https://placekitten.com/64/70"
-      },
-      {
-        "id": 8,
-        "name": "David Taylor",
-        "birthday": "2024-06-18",
-        "picture": "https://placekitten.com/64/71"
-      } , {
-        "id": 1,
-        "name": "John Doe",
-        "birthday": "2024-03-15",
-        "picture": "https://placekitten.com/64/64"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "birthday": "2024-03-20",
-        "picture": "https://placekitten.com/64/65"
-      },
-      {
-        "id": 3,
-        "name": "Alice Johnson",
-        "birthday": "2024-04-05",
-        "picture": "https://placekitten.com/64/66"
-      },
-      {
-        "id": 4,
-        "name": "Bob Brown",
-        "birthday": "2024-04-10",
-        "picture": "https://placekitten.com/64/67"
-      },
-      {
-        "id": 5,
-        "name": "Eva Davis",
-        "birthday": "2024-05-12",
-        "picture": "https://placekitten.com/64/68"
-      },
-      {
-        "id": 6,
-        "name": "Mike Wilson",
-        "birthday": "2024-05-25",
-        "picture": "https://placekitten.com/64/69"
-      },
-      {
-        "id": 7,
-        "name": "Sophie Miller",
-        "birthday": "2024-06-03",
-        "picture": "https://placekitten.com/64/70"
-      },
-      {
-        "id": 8,
-        "name": "David Taylor",
-        "birthday": "2024-06-18",
-        "picture": "https://placekitten.com/64/71"
-      } , {
-        "id": 1,
-        "name": "John Doe",
-        "birthday": "2024-03-15",
-        "picture": "https://placekitten.com/64/64"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "birthday": "2024-03-20",
-        "picture": "https://placekitten.com/64/65"
-      },
-      {
-        "id": 3,
-        "name": "Alice Johnson",
-        "birthday": "2024-04-05",
-        "picture": "https://placekitten.com/64/66"
-      },
-      {
-        "id": 4,
-        "name": "Bob Brown",
-        "birthday": "2024-04-10",
-        "picture": "https://placekitten.com/64/67"
-      },
-      {
-        "id": 5,
-        "name": "Eva Davis",
-        "birthday": "2024-05-12",
-        "picture": "https://placekitten.com/64/68"
-      },
-      {
-        "id": 6,
-        "name": "Mike Wilson",
-        "birthday": "2024-05-25",
-        "picture": "https://placekitten.com/64/69"
-      },
-      {
-        "id": 7,
-        "name": "Sophie Miller",
-        "birthday": "2024-06-03",
-        "picture": "https://placekitten.com/64/70"
-      },
-      {
-        "id": 8,
-        "name": "David Taylor",
-        "birthday": "2024-06-18",
-        "picture": "https://placekitten.com/64/71"
-      } , {
-        "id": 1,
-        "name": "John Doe",
-        "birthday": "2024-03-15",
-        "picture": "https://placekitten.com/64/64"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "birthday": "2024-03-20",
-        "picture": "https://placekitten.com/64/65"
-      },
-      {
-        "id": 3,
-        "name": "Alice Johnson",
-        "birthday": "2024-04-05",
-        "picture": "https://placekitten.com/64/66"
-      },
-      {
-        "id": 4,
-        "name": "Bob Brown",
-        "birthday": "2024-04-10",
-        "picture": "https://placekitten.com/64/67"
-      },
-      {
-        "id": 5,
-        "name": "Eva Davis",
-        "birthday": "2024-05-12",
-        "picture": "https://placekitten.com/64/68"
-      },
-      {
-        "id": 6,
-        "name": "Mike Wilson",
-        "birthday": "2024-05-25",
-        "picture": "https://placekitten.com/64/69"
-      },
-      {
-        "id": 7,
-        "name": "Sophie Miller",
-        "birthday": "2024-06-03",
-        "picture": "https://placekitten.com/64/70"
-      },
-      {
-        "id": 8,
-        "name": "David Taylor",
-        "birthday": "2024-06-18",
-        "picture": "https://placekitten.com/64/71"
-      }, {
-        "id": 1,
-        "name": "John Doe",
-        "birthday": "2024-03-15",
-        "picture": "https://placekitten.com/64/64"
-      },
-      {
-        "id": 2,
-        "name": "Jane Smith",
-        "birthday": "2024-03-20",
-        "picture": "https://placekitten.com/64/65"
-      },
-      {
-        "id": 3,
-        "name": "Alice Johnson",
-        "birthday": "2024-04-05",
-        "picture": "https://placekitten.com/64/66"
-      },
-      {
-        "id": 4,
-        "name": "Bob Brown",
-        "birthday": "2024-04-10",
-        "picture": "https://placekitten.com/64/67"
-      },
-      {
-        "id": 5,
-        "name": "Eva Davis",
-        "birthday": "2024-05-12",
-        "picture": "https://placekitten.com/64/68"
-      },
-      {
-        "id": 6,
-        "name": "Mike Wilson",
-        "birthday": "2024-05-25",
-        "picture": "https://placekitten.com/64/69"
-      },
-      {
-        "id": 7,
-        "name": "Sophie Miller",
-        "birthday": "2024-06-03",
-        "picture": "https://placekitten.com/64/70"
-      },
-      {
-        "id": 8,
-        "name": "David Taylor",
-        "birthday": "2024-06-18",
-        "picture": "https://placekitten.com/64/71"
-      }
-  ]
-  
+  {
+    "id": 1,
+    "name": "DAVID PAUL",
+    "birthday": "2024-03-13",
+    "picture": "https://randomuser.me/api/portraits/men/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "birthday": "2024-03-13",
+    "picture": "https://randomuser.me/api/portraits/women/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "birthday": "2024-03-13",
+    "picture": "https://randomuser.me/api/portraits/women/3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Bob Brown",
+    "birthday": "2024-04-10",
+    "picture": "https://randomuser.me/api/portraits/men/4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Eva Davis",
+    "birthday": "2024-04-12",
+    "picture": "https://randomuser.me/api/portraits/women/5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Mike Wilson",
+    "birthday": "2024-05-25",
+    "picture": "https://randomuser.me/api/portraits/men/6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sophie Miller",
+    "birthday": "2024-03-014",
+    "picture": "https://randomuser.me/api/portraits/women/7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "David Taylor",
+    "birthday": "2024-06-14",
+    "picture": "https://randomuser.me/api/portraits/men/8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "John Doe",
+    "birthday": "2024-03-15",
+    "picture": "https://randomuser.me/api/portraits/men/9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Jane Smith",
+    "birthday": "2024-03-20",
+    "picture": "https://randomuser.me/api/portraits/women/10.jpg"
+  }
+]

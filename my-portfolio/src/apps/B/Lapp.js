@@ -5,6 +5,10 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useSpring, animated } from 'react-spring';
@@ -14,7 +18,8 @@ import BirthdayToday from './BirthdayToday';
 
 import './Lapp.css';
 
-const users = require('./users.json');
+import users from './users.json';
+
 
 function BirthdayCake() {
   const props = useSpring({
@@ -33,6 +38,8 @@ function Lapp() {
   const [displayedUsers, setDisplayedUsers] = useState(6);
   const [isBirthday, setIsBirthday] = useState(false);
   const [filter, setFilter] = useState('all'); // 'all', 'week', 'month', 'today'
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     checkBirthdayNotifications();
@@ -50,6 +57,16 @@ function Lapp() {
 
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
+  };
+
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+    setMenuOpen(true);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+    setMenuOpen(false);
   };
 
   const checkBirthdayNotifications = () => {
@@ -116,7 +133,19 @@ function Lapp() {
           <Button onClick={() => handleFilterChange('today')} variant={filter === 'today' ? 'contained' : 'outlined'} color="primary">Today</Button>
           <Button onClick={() => handleFilterChange('week')} variant={filter === 'week' ? 'contained' : 'outlined'} color="primary">Week</Button>
           <Button onClick={() => handleFilterChange('month')} variant={filter === 'month' ? 'contained' : 'outlined'} color="primary">Month</Button>
-          <FilterListIcon style={{ marginLeft: '10px', cursor: 'pointer' }} onClick={() => handleFilterChange('all')} />
+          <IconButton onClick={handleMenuOpen}>
+            <FilterListIcon />
+          </IconButton>
+          <Menu
+            anchorEl={anchorEl}
+            open={menuOpen}
+            onClose={handleMenuClose}
+          >
+            <MenuItem onClick={() => handleFilterChange('today')}>Today</MenuItem>
+            <MenuItem onClick={() => handleFilterChange('week')}>Week</MenuItem>
+            <MenuItem onClick={() => handleFilterChange('month')}>Month</MenuItem>
+            <MenuItem onClick={() => handleFilterChange('all')}>All</MenuItem>
+          </Menu>
         </Box>
       </Box>
       <Box display="flex">
@@ -152,7 +181,7 @@ function Lapp() {
           </Box>
         </div>
       </Box>
-      <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar />
+      <ToastContainer position="top-center" autoClose={8000} hideProgressBar />
     </div>
   );
 }
