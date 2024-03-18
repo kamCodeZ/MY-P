@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
+
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
@@ -130,9 +131,9 @@ function Lapp() {
       <Box display="flex" alignItems="center" justifyContent="space-between">
         <h1>Upcoming Birthdays</h1>
         <Box display="flex" alignItems="center">
-          <Button onClick={() => handleFilterChange('today')} variant={filter === 'today' ? 'contained' : 'outlined'} color="primary">Today</Button>
+          {/* <Button onClick={() => handleFilterChange('today')} variant={filter === 'today' ? 'contained' : 'outlined'} color="primary">Today</Button>
           <Button onClick={() => handleFilterChange('week')} variant={filter === 'week' ? 'contained' : 'outlined'} color="primary">Week</Button>
-          <Button onClick={() => handleFilterChange('month')} variant={filter === 'month' ? 'contained' : 'outlined'} color="primary">Month</Button>
+          <Button onClick={() => handleFilterChange('month')} variant={filter === 'month' ? 'contained' : 'outlined'} color="primary">Month</Button> */}
           <IconButton onClick={handleMenuOpen}>
             <FilterListIcon />
           </IconButton>
@@ -153,7 +154,29 @@ function Lapp() {
           <BirthdayToday users={users} />
         </div>
         <div className="right-panel">
+
           <div className="card-container">
+          <Box display="flex" alignItems="center" justifyContent="space-between">
+        <h1>Upcoming Birthdays</h1>
+        <Box display="flex" alignItems="center">
+          {/* <Button onClick={() => handleFilterChange('today')} variant={filter === 'today' ? 'contained' : 'outlined'} color="primary">Today</Button>
+          <Button onClick={() => handleFilterChange('week')} variant={filter === 'week' ? 'contained' : 'outlined'} color="primary">Week</Button>
+          <Button onClick={() => handleFilterChange('month')} variant={filter === 'month' ? 'contained' : 'outlined'} color="primary">Month</Button> */}
+          <IconButton onClick={handleMenuOpen}>
+            <FilterListIcon />
+          </IconButton>
+          <Menu
+            anchorEl={anchorEl}
+            open={menuOpen}
+            onClose={handleMenuClose}
+          >
+            <MenuItem onClick={() => handleFilterChange('today')}>Today</MenuItem>
+            <MenuItem onClick={() => handleFilterChange('week')}>Week</MenuItem>
+            <MenuItem onClick={() => handleFilterChange('month')}>Month</MenuItem>
+            <MenuItem onClick={() => handleFilterChange('all')}>All</MenuItem>
+          </Menu>
+        </Box>
+      </Box>
             {filteredUsers().slice(0, displayedUsers).map((user) => (
               <Card key={user.id} className="user-card">
                 <CardMedia

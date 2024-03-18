@@ -1,16 +1,11 @@
-
 // Home.js
-import React, { useState, useRef, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
-import Drawer from '@mui/material/Drawer';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
 import { Link } from 'react-router-dom';
-import Section from './Section';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import Slider from 'react-slick';
+import Projects from './Projects';
+import ProjectDetails from './ProjectDetails';
+import AboutMe from './AboutMe';
+import Contact from './Contact';
 import './Home.css'; // Make sure to include your CSS file
 
 const Home = () => {
@@ -44,6 +39,10 @@ const Home = () => {
             transform: x.interpolate((val) => `translateX(${val}%)`),
           }}
         >
+          {id === 1 && <Projects />}
+          {id === 2 && <ProjectDetails />}
+          {id === 3 && <AboutMe />}
+          {id === 4 && <Contact />}
           <p className="div-content">Div {id}</p>
         </animated.div>
       ))}
