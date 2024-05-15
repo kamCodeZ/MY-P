@@ -3,25 +3,25 @@
   {
     "id": 1,
     "name": "DAVID PAUL",
-    "birthday": "2024-05-7",
-    "picture": "https://randomuser.me/api/portraits/men/1.jpg"
+    "birthday": "2002-05-1",
+    "picture": "https://randomuser.me/api/portraits/men/5.jpg"
   },
   {
     "id": 2,
-    "name": "Jane Smith",
-    "birthday": "2024-03-13",
-    "picture": "https://randomuser.me/api/portraits/women/2.jpg"
+    "name": "Joe Smith",
+    "birthday": "2004-05-15",
+    "picture": "https://randomuser.me/api/portraits/women/9.jpg"
   },
   {
     "id": 3,
     "name": "Alice Johnson",
-    "birthday": "2024-03-13",
+    "birthday": "2007-05-15",
     "picture": "https://randomuser.me/api/portraits/women/3.jpg"
   },
   {
     "id": 4,
     "name": "Bob Brown",
-    "birthday": "2024-05-7",
+    "birthday": "2003-05-9",
     "picture": "https://randomuser.me/api/portraits/men/4.jpg"
   },
   {
@@ -56,7 +56,7 @@
   },
   {
     "id": 10,
-    "name": "Jane Smith",
+    "name": "Janeth Smith",
     "birthday": "2024-03-20",
     "picture": "https://randomuser.me/api/portraits/women/10.jpg"
   }

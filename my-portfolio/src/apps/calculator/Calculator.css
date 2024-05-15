@@ -1,26 +1,24 @@
 .calculator {
-    border-left: 12px solid grey;
-    border-right: 12px solid blue;
-    border-top: 12px solid grey;
-    border-bottom: 12px solid blue;
-    border-radius:23px  0 23px 0; 
-    padding: 5px;
-    background: black;
-    width: 320px;
-    position: relative;
-
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  border-left: 12px solid grey;
+  border-right: 12px solid grey;
+  border-top: 12px solid grey;
+  border-bottom: 12px solid grey;
+  border-radius: 23px 0 23px 0;
+  padding: 5px;
+  background: url('/workspaces/MY-P/my-portfolio/public/pexels-lucasmenesesphoto-7156911.jpg') center center no-repeat black; /* Add your background image path here */
+  background-size: cover;
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
   
   .formulaScreen {
     min-height: 20px;
     font-family: digital;
     font-size: 20px;
-    color: orange;
+    color: rgb(255, 253, 249)(6, 212, 205);
     text-align: right;
     vertical-align: text-top;
     line-height: 20px;
@@ -35,7 +33,7 @@
     text-align: right;
     line-height: 35px;
   }
-  
+   
   button {
     position: relative;
     height: 65px;
@@ -43,7 +41,7 @@
     color: white;
     outline: 1px solid #149231;
     border: none;
-    background: #4d4d4d;
+    background: #4d4d4d62;
     font-family: Share Tech Mono, monospace;
     font-size: 20px;
     cursor: default;
@@ -60,7 +58,7 @@
   }
   
   #clear {
-    background: #ac3939;
+    background: #c2292952;
   }
   
   #divide,

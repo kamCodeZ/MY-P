@@ -1,0 +1,23 @@
+.buttonClass {
+  font-size:18px;
+  font-family:Arial;
+  width:71px;
+  height:54px;
+  border-width:5px;
+  color:rgba(230, 236, 226, 1);
+  border-color:#b2b8ad;
+  font-weight:bold;
+  font-style:italic;
+  border-top-left-radius:9px;
+  border-top-right-radius:9px;
+  border-bottom-left-radius:9px;
+  border-bottom-right-radius:9px;
+  box-shadow:inset 9px -13px 31px -3px rgba(161, 124, 224, 1);
+  text-shadow:inset 0px -12px 0px rgba(185, 212, 149, 1);
+  background:linear-gradient(#dbe6c4, #9ba892);
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#9ba892, #dbe6c4);
+}
+            
